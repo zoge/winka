@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project winka with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/home/gere/workspace/winka/dist/winka.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="hu.winka.Main"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ jetty-server-8.1.3.v20120416.jar jetty-servlet-8.1.3.v20120416.jar jetty-servlets-8.1.3.v20120416.jar servlet-api-3.0.jar javax.activation-1.1.0.v201105071233.jar javax.mail.glassfish-1.4.1.v201005082020.jar jetty-util-8.1.3.v20120416.jar jetty-ajp-8.1.3.v20120416.jar jetty-annotations-8.1.3.v20120416.jar jetty-client-8.1.3.v20120416.jar jetty-continuation-8.1.3.v20120416.jar jetty-deploy-8.1.3.v20120416.jar jetty-http-8.1.3.v20120416.jar jetty-io-8.1.3.v20120416.jar jetty-jmx-8.1.3.v20120416.jar jetty-jndi-8.1.3.v20120416.jar jetty-overlay-deployer-8.1.3.v20120416.jar jetty-plus-8.1.3.v20120416.jar jetty-policy-8.1.3.v20120416.jar jetty-rewrite-8.1.3.v20120416.jar jetty-security-8.1.3.v20120416.jar jetty-webapp-8.1.3.v20120416.jar jetty-websocket-8.1.3.v20120416.jar jetty-xml-8.1.3.v20120416.jar vaadin-6.7.8.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="/home/gere/workspace/winka/bin"/>
+        	<fileset dir="/home/gere/workspace/winka/WebContent"/>
+        	<zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-server-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-servlet-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-servlets-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="servlet-api-3.0.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="javax.activation-1.1.0.v201105071233.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="javax.mail.glassfish-1.4.1.v201005082020.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-util-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-ajp-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-annotations-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-client-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-continuation-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-deploy-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-http-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-io-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-jmx-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-jndi-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-overlay-deployer-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-plus-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-policy-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-rewrite-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-security-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-webapp-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-websocket-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="jetty-xml-8.1.3.v20120416.jar"/>
+            <zipfileset dir="/home/gere/workspace/winka/lib" includes="vaadin-6.7.8.jar"/>
+        </jar>
+    </target>
+</project>
